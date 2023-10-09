@@ -6,10 +6,10 @@ def main(page: ft.Page):
     # Set up window
     page.title = "Timer app"
     page.theme_mode = ft.ThemeMode.LIGHT
-    # page.window_width = 800
-    # page.window_height = 500
+    page.window_width = 800
+    page.window_height = 500
     page.window_resizable = False
-    # page.window_maximizable = False
+    page.window_maximizable = False
     page.window_center()
 
     # Create application instance
