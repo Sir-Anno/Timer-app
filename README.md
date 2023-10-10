@@ -11,5 +11,6 @@ A simple timer app built in Python using Flet
 
 - Multi-threaded
 - User input validation
+- Timers are sorted by duration
 - Sound notification
 
