@@ -2,9 +2,6 @@ import flet as ft
 from timer import Timer
 
 
-audio = ft.Audio(src="./assets/sounds/timer_done.mp3")
-
-
 class TimerApp(ft.UserControl):
     def validate_new_timer(self, e):
         self.has_name = False
@@ -103,6 +100,8 @@ class TimerApp(ft.UserControl):
         )
 
         self.timers_list.controls.append(new_timer)
+        # Sort timers by duration
+        self.timers_list.controls.sort(key=lambda x: x.duration)
 
         # Reset controls
         self.button_add_new_timer.disabled = True
